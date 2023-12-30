@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style/style.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <title>DSC 140A</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 140A</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./materials/default/notes/book.pdf"><span class="">📖 Course Notes</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/p/G1F90E751"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/485594"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+
+                        <div class="site-title">
+                            <h1>DSC 140A &ndash; Probabilistic Modeling and Machine Learning</h1>
+                            <hr>
+                        </div>
+
+
+                        <h1 id="syllabus">📜 Syllabus</h1>
+<p>Welcome to DSC 140A in Winter 2024!
+This page should answer most of the questions you might have about how the
+course is run; check out the <a href="#faq">frequently asked questions</a> for answers to
+some common ones. If you don't find what you're looking for here, feel free to
+make a post on <a href="https://campuswire.com/p/G1F90E751">Campuswire</a>.</p>
+<p>Here is what the syllabus will cover:</p>
+<div class="toc">
+<ul>
+<li><a href="#syllabus">📜 Syllabus</a><ul>
+<li><a href="#instructor">Instructor</a></li>
+<li><a href="#modality">Modality</a></li>
+<li><a href="#getting-started">Getting Started</a><ul>
+<li><a href="#campuswire">Campuswire</a></li>
+<li><a href="#gradescope">Gradescope</a></li>
+<li><a href="#canvas">Canvas</a></li>
+<li><a href="#required-materials">Required Materials</a></li>
+</ul>
+</li>
+<li><a href="#lectures">Lectures</a></li>
+<li><a href="#office-hours">Office Hours</a></li>
+<li><a href="#discussions">Discussions</a></li>
+<li><a href="#labs">Labs</a><ul>
+<li><a href="#lab-redemptions">Lab Redemptions</a></li>
+<li><a href="#redemption-requests">Redemption Requests</a><ul>
+<li><a href="#example">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#homeworks">Homeworks</a><ul>
+<li><a href="#regrade-requests">Regrade Requests</a></li>
+<li><a href="#the-super-homework">The "Super Homework"</a></li>
+</ul>
+</li>
+<li><a href="#collaboration">Collaboration</a></li>
+<li><a href="#slip-days">Slip Days</a></li>
+<li><a href="#exams">Exams</a><ul>
+<li><a href="#midterms">Midterms</a></li>
+<li><a href="#final-exam">Final Exam</a></li>
+<li><a href="#exam-pass-criterion">Exam Pass Criterion</a></li>
+</ul>
+</li>
+<li><a href="#grading">Grading</a></li>
+<li><a href="#support-and-resources">Support and Resources</a></li>
+<li><a href="#faq">FAQ</a><ul>
+<li><a href="#is-this-class-curved">Is this class curved?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="instructor">Instructor</h2>
+<p>This quarter DSC 140A is being co-taught by two instructors:</p>
+<ul>
+<li>
+<p><strong>Prof. Mikio Aoi</strong><br>
+    <code>maoi@ucsd.edu</code><br>
+    <a href="https://www.mikioaoi.com">webpage</a><br>
+    <em>Lecture:</em>
+        12:30 PM
+        on
+        T/Th
+        in
+        CENTR 216
+        <br>
+    <em>Discussion:</em>
+        1:00 PM
+        on
+        Wednesday
+        in
+        CENTR 214</p>
+</li>
+<li>
+<p><strong>Prof. Justin Eldridge</strong><br>
+    <code>jeldridge@ucsd.edu</code><br>
+    <a href="https://eldridgejm.github.io/">webpage</a><br>
+    <em>Lecture:</em>
+        3:30 PM
+        on
+        T/Th
+        in
+        PCYNH 122
+        <br>
+    <em>Discussion:</em>
+        6:30 PM
+        on
+        Thursday
+        in
+        CSB 002</p>
+</li>
+</ul>
+<p>Co-teaching means that the course topics, assignments, course staff, policies,
+etc., will be the same between the two sections. There will be two different
+lecture times and two different discussion times, but they will cover the same
+content on the same schedule. You may attend whichever lecture section you would like
+after Week 02.</p>
+<h2 id="modality">Modality</h2>
+<p>UCSD's plan for the 2022-23 academic year is to fully return to on-campus
+instruction. That said, lectures in DSC 140A will be recorded and available
+online. Attendance is appreciated, but not required. On the other hand, exams
+will be fully in-person, and physical attendance is required for those.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>To get started in DSC 140A, you'll need to set up accounts on a
+couple of websites.</p>
+<h3 id="campuswire">Campuswire</h3>
+<p>We'll be using <a href="https://campuswire.com/p/G1F90E751">Campuswire</a> as our course message
+board. You should have received an invitation via email, but if not you should
+be able to join by clicking the link above and using the access code <code>0691</code>. Be sure sure to join Campuswire as soon as possible,
+since all course communication will be done through it.</p>
+<p>If you have a question about anything to do with the course  &mdash; if you're
+stuck on a homework problem, want clarification on the logistics, or just have a
+general question about data science &mdash; you can make a post on Campuswire.
+We only ask that if your question includes some or all of an answer, please make
+your post <strong>private</strong> so that others cannot see it. You can also post
+anonymously if you would prefer.</p>
+<p>Course staff will regularly check Campuswire and try to answer any questions
+that you have. You're also encouraged to answer a question asked by another
+student if you feel that you know the answer.</p>
+<h3 id="gradescope">Gradescope</h3>
+<p>We'll be using 
+<a href="https://www.gradescope.com/courses/485594">Gradescope</a> for
+homework submission and grading. Most of the assignments will be a mixture of math and
+coding, and the coding parts are usually autograded via Gradescope.,
+You should have received an email invitation for Gradescope, but if not you can join with code
+<code>6ZE5Z6</code>.</p>
+<h3 id="canvas">Canvas</h3>
+<p>We will not be using Canvas. All course materials will be available at
+<a href="http://dsc140a.com">dsc140a.com</a> or <a href="https://www.gradescope.com/courses/485594">Gradescope</a>.</p>
+<h3 id="required-materials">Required Materials</h3>
+<p>No materials are required for this course; we'll use lecture slides as
+the main resource. That said, here are some books that you might find useful;
+the first is freely available as a PDF:</p>
+<ul>
+<li>Trevor Hastie, Robert Tibshirani, and Jerome Friedman, 
+  <a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><em>The elements of statistical learning (2nd edition)</em></a>.</li>
+<li>Gilbert Strang, <em>Linear algebra and its applications</em>.</li>
+<li>Kevin Murphy, <em>Machine learning: a probabilistic perspective</em>.</li>
+<li>Richard Duda, Peter Hart, and David Stork, <em>Pattern classification (2nd edition)</em>.</li>
+</ul>
+<h2 id="lectures">Lectures</h2>
+<p>Lectures will be held in-person at the regularly-scheduled time and place, but
+they will be podcasted and posted online for remote viewing. Attendance is
+appreciated, but not required.</p>
+<p>Since there are two sections of the course, there will be two different lecture
+times, but they will cover the same content on the same schedule. The lecture times are:</p>
+<ul>
+<li><strong>Prof. Mikio Aoi</strong>:
+        12:30 PM
+        on
+        T/Th
+        in
+        CENTR 216</li>
+<li><strong>Prof. Justin Eldridge</strong>:
+        3:30 PM
+        on
+        T/Th
+        in
+        PCYNH 122</li>
+</ul>
+<p>You may attend whichever lecture section you would like after Week 02.</p>
+<p>You will be able to find the lecture recordings at <a href="https://podcast.ucsd.edu/">podcast.ucsd.edu</a>.</p>
+<h2 id="office-hours">Office Hours</h2>
+<p>Course staff, including tutors, TAs, and instructors, will hold office hours
+regularly throughout the week. Please see the <a href="./office_hours.html">office
+hours</a> page for the schedule and for instructions.</p>
+<h2 id="discussions">Discussions</h2>
+<p>Since there are two sections of the course, there are two discussion times, but they
+will cover the same content on the same schedule.</p>
+<p>The discussion times are:</p>
+<ul>
+<li><strong>Prof. Mikio Aoi</strong>:
+        1:00 PM
+        on
+        Wednesday
+        in
+        CENTR 214</li>
+<li><strong>Prof. Justin Eldridge</strong>:
+        6:30 PM
+        on
+        Thursday
+        in
+        CSB 002</li>
+</ul>
+<p>The discussions review the materials from that week's lectures and
+prepare you for the homework. Just as with lecture, topics and techniques introduced
+in discussion might appear on the homework and in exams. In particular, some of the more
+difficult homework problems may be partially solved in discussion section to give you a
+good start.</p>
+<p>Discussions will also serve as midterm reviews in the weeks leading up to the exams.</p>
+<p>Attendance is recommended, but not required. The discussions will be podcasted,
+but the nature of discussion section (they usually involve a large amount of
+groupwork) means that the podcasted discussion might not be as useful as
+in-person attendance.</p>
+<h2 id="labs">Labs</h2>
+<p>There will be two types of assignments in DSC 140A: <em>labs</em> and <em>homeworks</em>.
+Labs help develop <em>essential</em> knowledge, while homeworks test your ability to
+apply that knowledge to solve more difficult problems. You can think of labs as
+a quick check on your understanding before you head into the homework.</p>
+<p>Labs consist of a small number of autograded multiple choice or numerical answer
+questions. They will be posted on Gradescope weekly. The exams will mostly
+consist of questions of a similar format and difficulty as those on the labs.
+However, the exams will have a time limit, while the labs have no time limit.</p>
+<p>In previous iterations of DSC 140A, these "essential" questions were actually a
+part of the homeworks. We have decided to move these essential problems to their
+own lab assignment, therefore making the homeworks shorter. This has a big
+benefit: because the labs are autograded and due before the homeworks, you'll
+get your lab grade <em>before</em> heading into the homework. This gives you an
+opportunity to patch up any misunderstandings.</p>
+<h3 id="lab-redemptions">Lab Redemptions</h3>
+<p>You should think of the labs as a first practice towards the goal of mastering
+the topics in DSC 140A. But the first time you practice anything, you're not going
+to be perfect. The key is to <a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-psych-010416-044022"><em>learn from the
+mistakes</em></a>.</p>
+<p>To encourage this, DSC 140A uses the concept of "redemption" on lab
+assignments. Under this policy, you may regain 85% of the credit for a lab
+problem that was previously answered incorrectly by submitting an explanation of
+your mistake along with a correction. This policy encourages you to revisit
+lab mistakes in order to correct your understanding, and allows us to give
+quick, targeted feedback through grading.</p>
+<p>For a problem to be eligible for redemption, you must have submitted an answer
+to the problem.</p>
+<p>If you got the problem correct, you'll receive the total number of points for
+it. If you didn't get the problem correct, even due to a relatively small
+mistake, you'll receive no credit <em>until</em> you submit a redemption request (see
+below). If your redemption request is accepted, you'll be given 85% of the
+credit for the problem. You can think of the 15% deduction as the cost of
+requiring a tutor to look over your redemption request &mdash; or, if you're a
+glass-half-full kind of person, as an incentive to get the problem correct the
+first time around.</p>
+<h3 id="redemption-requests">Redemption Requests</h3>
+<p>There are two ways to submit a redemption request for a lab problem:</p>
+<ul>
+<li>Option 1. Come to any tutor, TA, or instructor office hours and discuss the problem
+   (<strong>preferred</strong>)</li>
+<li>Option 2. Submit a <a href="https://www.gradescope.com/help#help-center-item-student-regrades">regrade
+request</a> on
+<a href="https://www.gradescope.com/courses/485594">Gradescope</a>.</li>
+</ul>
+<p>Whichever method you choose, you should answer the following questions:</p>
+<ol>
+<li>What was the main misconception or misunderstanding that led to your answer
+   being wrong?</li>
+<li>How did this misconception cause the wrong answer?</li>
+<li>How does fixing the misunderstanding lead you to the right answer?</li>
+</ol>
+<p>The next section contains an example of a good redemption request.</p>
+<p>The amount of detail needed in your request depends on how complex your mistake
+was; if it was a simple one, only one or two sentences may be necessary. A
+grader will review your request shortly (as long as you submit it within a week
+of the homework scores being posted, your regrade request will be reviewed). If
+you aren't able to identify what you did incorrectly, you'll be asked to attend
+a grader's office hours in order to discuss the problem in more detail.</p>
+<p>Note that we will not be able to handle redemption requests which are <em>submitted</em>
+more than a week after you have received your grade. However, as long as your request
+is submitted within a week, we will process it.</p>
+<h4 id="example">Example</h4>
+<p>Here's a simple example to demonstrate the redemption process. Suppose you're
+given the following simple problem:</p>
+<p><strong>Question</strong>: What is <code>3 + 5 * 2</code>?</p>
+<p>Let's say you misapplied the order of operations, giving you an incorrect answer
+of 16 (the correct answer is, of course, 13).
+Here's a good redemption request that uses the template above:</p>
+<blockquote>
+<i>
+1) I misapplied the order of operations. 2) I added before multiplying, so I
+got (3 + 5) * 2 = 8 * 2 = 16. 3) Multiplication should be done first so that
+we get 3 + (5 * 2) = 3 + 10 = 13.
+</i>
+</blockquote>
+
+<p>Again, the key isn't just giving the right answer &mdash; that's published in the
+solutions, after all. The important part (according to the 
+<a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-psych-010416-044022">research</a>)
+is identifying why you made the mistake.</p>
+<h2 id="homeworks">Homeworks</h2>
+<p>There will be eight homeworks assigned throughout the quarter, plus one <a href="#the-super-homework">"super homework"</a>
+(described below).
+Homeworks will be a mixture of written problems (which are manually graded by our tutor
+staff) and coding problems (which are autograded).
+Each homework will be due via
+Gradescope at 11:59 PM on the 
+Wednesday 
+after it
+is assigned except otherwise noted, and you'll have roughly a week to complete
+each assignment from the time it is posted.</p>
+<p>The homework due date is carefully chosen to fit within a one week "cycle".
+A "week" in DSC 140A
+will start with Tuesday's lecture, followed by Thursday's. That
+week's discussion on Thursday will review the
+lecture topics with an eye towards practical application. The lab is then due
+on Sunday, giving you some practice
+before the homework. The homework is then due on the next Wednesday, giving you some
+time after the discussion and lab to complete it.</p>
+<h3 id="regrade-requests">Regrade Requests</h3>
+<p>If you feel that the grader has made a mistake, you may submit a regrade request
+via Gradescope within <em>one week</em> of the grades being released. Note that part
+of your grade is clarity, so if your answer was mostly right but unclear you may
+still not receive full credit.</p>
+<p>Note that <strong>regrade</strong> requests are not the same thing as <strong>redemption</strong> requests (though both are
+submitted on Gradescope in the same way). Unfortunately, we cannot offer
+redemption requests for homework problems as we do with lab problems — homework
+problems are typically more complex and require more time to grade, and
+regrading them would take more resources than we have available.</p>
+<h3 id="the-super-homework">The "Super Homework"</h3>
+<p>Instead of a comprehensive final exam, we'll have a comprehensive "Super
+Homework". The super homework will focus on the content from the last two weeks
+of the quarter, but it will also contain material from throughout DSC 140A. It
+will be about twice as long as a typical homework.</p>
+<p>Because the super homework covers twice as much material as a usual homework, it
+will be worth roughly twice as much. However, you may still collaborate on the super
+homework as long as you write up solutions in your own words.</p>
+<p>The super homework will be due during finals week (the exact date is yet to be determined).</p>
+<h2 id="collaboration">Collaboration</h2>
+<p>You are highly encouraged to <em>think</em> about the lab and homework problems
+together, but you must turn in your own solutions written in your own words. We
+feel that discussing homework problems is an excellent way to learn, but writing
+the solutions in your own words promotes a deeper, more solid understanding than
+discussion alone.</p>
+<p>We recommend the following way of working on the labs and homeworks. First, meet
+with your partner to discuss the solutions, but don't leave the meeting with
+anything written down. Wait an hour or so, then write up the solutions in your
+own words working from memory. In that hour, you inevitably forgot some of the
+details of the solution. If you find that you have trouble filling them in, its
+a sign that you might not have understood the solution as well as you first
+thought!</p>
+<p>If you have any questions or worries about whether your collaboration
+constitutes
+a violation of academic integrity, feel free to ask us on Campuswire.</p>
+<h2 id="slip-days">Slip Days</h2>
+<p>You have <strike><strong><em>five</em></strong></strike> <strong><em>six</em></strong> <strong>slip days</strong> to use throughout the quarter on any lab or homework
+(including the super homework). A slip day extends the deadline by 24 hours.
+Slip days cannot be "stacked" or "combined" to extend the deadline further
+&mdash; the latest any assignment can be submitted is 24 hours after the
+deadline. Slip days are applied automatically at the end of the quarter, but
+it's your responsibility to keep track of how many you have left.</p>
+<p>Slip days are designed to be a transparent and predictable source of leniency in
+deadlines. You can use a slip day if you are too busy to complete an assignment
+on its original due date (or if you forgot about it). But slips days are also
+meant for things like the internet going down at 11:58 PM just as you go to
+submit your homework. Slip days are to be used in exceptional circumstances, so
+you probably shouldn't get close to using all of them — if you do get close to
+using that many, we will likely reach out to make sure that everything is OK.</p>
+<p>Note that slip days are not designed to help in the case of a serious illness or
+other unfortunate event that severely disrupts your ability to participate in
+the class. If something like that should arise, please let us know ASAP!</p>
+<h2 id="exams">Exams</h2>
+<h3 id="midterms">Midterms</h3>
+<p>There will be two midterm exams:</p>
+<ul>
+<li><strong>Midterm 01</strong>: Thursday, February 09 (focuses on Lectures 01 &mdash; 08)</li>
+<li><strong>Midterm 02</strong>: Thursday, March 09 (focuses on Lectures 09 &mdash; 15)</li>
+</ul>
+<p>The exams will be held in-person during the regularly-scheduled lecture times.</p>
+<h3 id="final-exam">Final Exam</h3>
+<p>The final exam for DSC 140A is a "no fault" final split into two sections:</p>
+<ol>
+<li>An optional Midterm 01 "Redemption" section focusing on Lectures 01 &mdash; 08</li>
+<li>An optional Midterm 02 "Redemption" section focusing on Lectures 09 &mdash; 15</li>
+</ol>
+<p>If your score on the midterm redemption section is higher than your score on the
+original midterm, it will replace that grade. Getting a lower score on a
+redemption section cannot hurt you (but it will make us sad). As a consequence,
+the redemption sections are effectively optional.</p>
+<p>Under this policy, a bad performance on an earlier exam can be erased by good
+performance on the same material in a later exam.</p>
+<p><strong>Example</strong>: You got an "F" on Midterm 1 and a "B" on Midterm 2. You decide to take only the
+first redemption section on the final (though you could have taken both), and you
+receive an "A". Your midterm scores are now "A" and "B".</p>
+<p>The redemption exams for both sections will be held on the same date and time:
+Saturday, March 18 at 11:30 AM.</p>
+<p>Note that the topics from Lectures 16, 17, and 18 are not on any exam. These will
+instead be tested in the <a href="#the-super-homework">Super Homework</a>.</p>
+<h3 id="exam-pass-criterion">Exam Pass Criterion</h3>
+<p>In order to pass the class, the mean of your two midterm scores (after redemption is taken into account) must be 60% or greater.</p>
+<h2 id="grading">Grading</h2>
+<p>We'll be using the following grading scheme:</p>
+<ul>
+<li>12.5%: Labs</li>
+<li>30%: Homeworks</li>
+<li>7.5%: "Super Homework"</li>
+<li>25%: Midterm 01 (or Redemption Midterm 01, whichever is larger)</li>
+<li>25%: Midterm 02 (or Redemption Midterm 02, whichever is larger)</li>
+</ul>
+<p>In a typical quarter, the midterm redemption policy has the same effect as a
+traditional "curve", therefore replacing the need for one.  The standard grading
+scale (where an A is 93+, A- is 90+, B+ is 87+, etc.) will be used as a starting
+point, but once all scores are in, we will run a clustering algorithm to
+automatically find the best cutoffs for each letter grade. These cutoffs can
+only be lowered. For instance, the threshold for an "A" will never be higher
+than 93%.</p>
+<p>A+ grades are not awarded according to a threshold. Instead, A+'s are awarded
+to the top 5% of students by overall grade.</p>
+<p>Note that in order to pass the class, the mean of your two midterm scores (after redemption is taken into account) must be 60% or greater.</p>
+<h2 id="support-and-resources">Support and Resources</h2>
+<p>As instructors, our job is to foster an environment where everyone, regardless
+of identity, feels welcome and is able to focus on learning. If there is
+something we can do in this mission, or if there is something preventing you
+from succeeding in the class, please let us know. If you feel uncomfortable
+speaking with us or are searching for help on a specific
+concern, there are several campus resources
+available to you, including:</p>
+<ul>
+<li><a href="https://caps.ucsd.edu/">UCSD Counseling and Psychological Services (CAPS)</a></li>
+<li><a href="https://thehub.ucsd.edu/">Hub Basic Needs Center</a></li>
+<li><a href="https://osd.ucsd.edu/">Office for Students with Disability (OSD)</a></li>
+<li><a href="https://blink.ucsd.edu/HR/policies/sexual/OPHD.html">Office for Prevention of Sexual Harrassment and Discrimination</a></li>
+</ul>
+<p>More generally, if you have <em>any</em> concerns about your ability to focus or
+succeed in this course, or just need someone to talk to, <em>please</em> contact
+us ASAP and we'll figure something out.</p>
+<h2 id="faq">FAQ</h2>
+<h3 id="is-this-class-curved">Is this class curved?</h3>
+<p>In a typical quarter, the midterm redemption policy has the same effect as a
+traditional "curve", therefore replacing the need for one.  The standard grading
+scale (where an A is 93+, A- is 90+, B+ is 87+, etc.) will be used as a starting
+point, but once all scores are in, we will run a clustering algorithm to
+automatically find the best cutoffs for each letter grade. These cutoffs can
+only be lowered. For instance, the threshold for an "A" will never be higher
+than 93%.</p>
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>

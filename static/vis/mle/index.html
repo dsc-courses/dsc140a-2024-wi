@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Maximum Likelihood</title>
+
+
+        <script src="../p5/p5.min.js"></script>
+        <!-- <script src="../addons/p5.sound.js"></script> -->
+        <script src="plt.js"></script>
+        <script src="sketch.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+
+        <!-- The loading of KaTeX is deferred to speed up page rendering -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+
+        <!-- To automatically render math in text elements, include the auto-render extension: -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+                                                                                                                                                                                          onload="renderMathInElement(document.body);"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    </head>
+
+    <body style="margin-bottom: 12em">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1 col-md-2">
+                </div>
+                <div class="col-xs-10 col-md-8">
+
+                    <div id='canvas-curve'>
+                    </div>
+                    <div id='canvas-max'>
+                    </div>
+
+                    <div>
+                        <p>
+                        \(\mu\) (controls the Gaussian's location)
+                        <input type="range" min="-3" max="3" value="-2" step=".01" style="width:50%" id="mu">
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                        \(\sigma\) (controls the Gaussian's width)
+                        <input type="range" min=".7" max="3" value="1" step=".01" style="width:50%" id="sigma">
+                        </p>
+                    </div>
+
+                    <h1>
+                        Maximum Likelihood
+                    </h1>
+
+                    <p>
+                        The data points shown above were drawn from a Gaussian.
+                        What were the Gaussian's parameters? We can estimate them
+                        using the principle of <i>Maximum Likelihood</i>.
+                    </p>
+
+                    <p>
+                    Move the sliders above to adjust the parameter estimates.
+                    As you do, the likelihood of that choice of parameters with
+                    respect to the data will be shown as the blue bar labeled
+                    "current likelihood". The largest likelihood seen so far is
+                    represented by the gray bar. Try to maximize the
+                    likelihood.
+                    </p>
+
+                    <div>
+                        <p>
+                        Recall that the <it>likelihood</it> of the parameters \(\mu, \sigma\) is given by:
+                        $$
+                        \mathcal{L}(\mu, \sigma; x^{(1)}, \ldots, x^{(n)}) = \prod_{i=1}^n p(x^{(i)}; \mu, \sigma).
+                        $$
+                        In this case, \(p\) is the <it>Gaussian</it> probability density function:
+                        $$
+                        p(x; \mu, \sigma) = \frac{1}{\sigma \sqrt{2 \pi}}e^{-(x - \mu)^2/(2\sigma^2)}
+                        $$
+                        In terms of the above visualization:
+                        <ul>
+                            <li>
+                                \( x^{(i)} \) is the \(i\)th data point, represented by a <b>black circle</b>
+                            </li>
+                            <li>
+                                \( p(x^{(i)}; \mu, \sigma) \) is the density at
+                                the \(i\)th data point, represented by the heights of the
+                                <b>dashed blue lines</b>. The longer this line,
+                                the "more likely" it was to generate this data
+                                point with this choice of \( \mu \) and \(
+                                \sigma \).
+                            </li>
+                            <li>
+                                The likelihood, \( \mathcal{L}(\mu, \sigma; x^{(1)}, \ldots, x^{(n)}) \),
+                                is the product of the heights of the dashed blue lines, and is represented
+                                by the length of the <b>blue bar</b> labeled "current likelihood".
+                            </li>
+                        </ul>
+                        If any one of the lines is close to zero in height, the
+                        current choice of parameters is unlikely for the
+                        corresponding data point, and so the overall likelihood
+                        is also close to zero.
+                        </p>
+                        <p>
+                        In the case where we assume that the data came from a
+                        Gaussian, we do not need to use an iterative approach
+                        to find the maximum likelihood estimates for \( \mu \)
+                        and \( \sigma \); we can derive formulas for them that
+                        work on any set of data. Namely:
+                        $$
+                        \mu_\text{MLE} = \frac{1}{n} \sum_{i=1}^n x^{(i)}
+                        \qquad
+                        \sigma_\text{MLE} = \sqrt{\frac{1}{n} \sum_{i=1}^n (x^{(i)} - \mu_\text{MLE})^2}
+                        $$
+                        That is, the maximum likelihood estimates are the mean and standard deviation, respectively.
+                        There are similar results for distributions other than Gaussian, too.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-xs-1 col-md-2">
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

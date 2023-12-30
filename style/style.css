@@ -1,0 +1,224 @@
+@media screen and (min-width: 576px) {
+    .nav {
+        height: 100%;
+    }
+
+    .main-content {
+        max-width: 870px;
+        padding-left: 60px;
+        padding-top: 60px;
+    }
+
+    .navbar {
+        padding-top: 60px;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .nav {
+        padding-bottom: 60px;
+    }
+
+    div.site-title {
+        display: none;
+    }
+
+    .main-content {
+        padding-top: 20px;
+    }
+}
+
+body {
+    font-size: 13pt;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: #5c5962;
+}
+
+.navbar {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 30pt;
+}
+
+h1,h2,h3,h4 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: #27262b;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+
+div.site-title h1 {
+    font-size: 18pt;
+    margin-top: 0em;
+    font-family: 'Be Vietnam Pro'
+}
+
+div.site-title {
+}
+
+/* listing */
+/* -------------------------------------------------------------------------------- */
+div.listing {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* schedule */
+/* -------------------------------------------------------------------------------- */
+
+div.schedule {
+    margin-top: 2em;
+}
+
+div.schedule-week {
+    margin-bottom: 5em;
+}
+
+div.schedule-week-future {
+}
+
+div.schedule-week-title {
+    margin-bottom: 3em;
+}
+
+h1.schedule-week-title-number {
+    font-size: 18pt;
+    margin-bottom: .1em;
+    margin-top: 0em;
+}
+
+h2.schedule-week-title-topic {
+    font-size: 30pt;
+    margin-top: 0em;
+    margin-bottom: .1em;
+}
+
+h3.schedule-week-component-title {
+    font-size: 16pt;
+    margin-bottom: .5em;
+    margin-top: .25em;
+}
+
+div.schedule-lecture {
+    margin-bottom: 3em;
+}
+
+div.schedule-lecture.last {
+    margin-bottom: 0em;
+}
+
+i.schedule-icon {
+    margin-right: .7em;
+}
+
+div.schedule-resource-parts {
+    margin-top: .5em;
+}
+
+ol.schedule-resource-parts {
+    counter-reset: part-counter;
+    list-style: none;
+}
+
+ol.schedule-resource-parts li {
+    counter-increment: part-counter;
+    font-size: 12pt;
+    margin-left: -.1em;
+    margin-bottom: .4em;
+    position: relative;
+}
+
+ol.schedule-resource-parts li:before {
+    position: absolute;
+    left: -2em;
+    content: counter(part-counter, decimal-leading-zero) "  ";
+    opacity: 0.2;
+}
+
+/* tip for separators found at: 
+ * https://www.jankollars.com/posts/multi-line-horizontal-list-with-separators/ 
+ */
+ul.schedule-lecture-resources li.schedule-resource {
+    font-size: 12pt;
+    margin-left: -2.5em;
+    margin-bottom: .4em;
+    list-style-type: none;
+}
+
+ul.schedule-assignment-resources, ul.schedule-discussion-resources {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    margin-left: -1.75ch;
+    clip-path: inset(0 0 0 1.75ch);
+    font-size: 12pt;
+}
+
+ul.schedule-assignment-resources li, ul.schedule-discussion-resources li {
+    padding-left: 0ch;
+}
+
+ul.schedule-assignment-resources li::before, ul.schedule-discussion-resources li::before {
+    content: '•';
+    display: inline-block;
+    margin-left: .5ch;
+    margin-right: .25ch;
+    width: .5ch;
+    text-align: center;
+}
+
+span.schedule-resource-title {
+    color: #27262b;
+    margin-right: .2em;
+    font-weight: 500;
+}
+
+div.schedule-announcement {
+    margin-top: -1em;
+    margin-bottom: 2em;
+}
+
+div.schedule-past-or-future {
+    font-size: 16pt;
+    margin-bottom: 4em;
+}
+
+.schedule-separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #c0c0c0;
+}
+
+.schedule-separator::before, .schedule-separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule-separator::before {
+    margin-right: .25em;
+}
+
+.schedule-separator::after {
+    margin-left: .25em;
+}
+
+div.schedule-separator {
+    margin-bottom: 4em;
+}
