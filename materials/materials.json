@@ -47,7 +47,7 @@
             "publications": {
                 "01-knn": {
                     "metadata": {
-                        "date": "2023-01-10",
+                        "date": "2024-01-09",
                         "topic": "Introduction",
                         "number": 1
                     },
@@ -55,7 +55,7 @@
                 },
                 "02-linear_models": {
                     "metadata": {
-                        "date": "2023-01-12",
+                        "date": "2024-01-11",
                         "topic": "Linear Predictors",
                         "number": 2,
                         "videos": null
@@ -68,7 +68,7 @@
                 },
                 "03-linear_models-II": {
                     "metadata": {
-                        "date": "2023-01-17",
+                        "date": "2024-01-16",
                         "topic": "Least Squares Regression and Perceptrons",
                         "number": 3,
                         "videos": null
@@ -81,7 +81,7 @@
                 },
                 "04-gradient_descent": {
                     "metadata": {
-                        "date": "2023-01-19",
+                        "date": "2024-01-18",
                         "topic": "Gradient Descent",
                         "number": 4,
                         "videos": null
@@ -94,7 +94,7 @@
                 },
                 "05-convexity": {
                     "metadata": {
-                        "date": "2023-01-24",
+                        "date": "2024-01-23",
                         "topic": "Stochastic Gradient Descent and Convexity",
                         "number": 5,
                         "videos": null
@@ -103,7 +103,7 @@
                 },
                 "06-svm": {
                     "metadata": {
-                        "date": "2023-01-26",
+                        "date": "2024-01-25",
                         "topic": "SVMs",
                         "number": 6,
                         "videos": null
@@ -116,7 +116,7 @@
                 },
                 "07-regularization": {
                     "metadata": {
-                        "date": "2023-01-31",
+                        "date": "2024-01-30",
                         "topic": "Regularization",
                         "number": 7,
                         "videos": null
@@ -129,7 +129,7 @@
                 },
                 "08-kernels": {
                     "metadata": {
-                        "date": "2023-02-02",
+                        "date": "2024-02-01",
                         "topic": "Kernels",
                         "number": 8,
                         "videos": null
@@ -142,7 +142,7 @@
                 },
                 "09-neural_networks": {
                     "metadata": {
-                        "date": "2023-02-07",
+                        "date": "2024-02-06",
                         "topic": "Neural Networks",
                         "number": 9,
                         "videos": null
@@ -155,7 +155,7 @@
                 },
                 "10-bayes_decision_theory": {
                     "metadata": {
-                        "date": "2023-02-14",
+                        "date": "2024-02-13",
                         "topic": "Bayes Decision Theory",
                         "number": 10,
                         "videos": [
@@ -181,7 +181,7 @@
                 },
                 "11-density_estimation": {
                     "metadata": {
-                        "date": "2023-02-16",
+                        "date": "2024-02-15",
                         "topic": "Density Estimation",
                         "number": 11,
                         "videos": null
@@ -194,7 +194,7 @@
                 },
                 "12-mle": {
                     "metadata": {
-                        "date": "2023-02-21",
+                        "date": "2024-02-20",
                         "topic": "Maximum Likelihood",
                         "number": 12,
                         "videos": null
@@ -207,7 +207,7 @@
                 },
                 "13-mv-gaussians": {
                     "metadata": {
-                        "date": "2023-02-23",
+                        "date": "2024-02-22",
                         "topic": "Multivariate Gaussians",
                         "number": 13,
                         "videos": null
@@ -220,7 +220,7 @@
                 },
                 "14-naive_bayes": {
                     "metadata": {
-                        "date": "2023-02-28",
+                        "date": "2024-02-27",
                         "topic": "Naive Bayes",
                         "number": 14,
                         "videos": null
@@ -233,7 +233,7 @@
                 },
                 "15-regression_probabilistic": {
                     "metadata": {
-                        "date": "2023-03-02",
+                        "date": "2024-02-29",
                         "topic": "Regression (Probabilistic View)",
                         "number": 15,
                         "videos": null
@@ -246,7 +246,7 @@
                 },
                 "16-decision_trees": {
                     "metadata": {
-                        "date": "2023-03-07",
+                        "date": "2024-03-05",
                         "topic": "Decision Trees",
                         "number": 16,
                         "videos": null
@@ -255,7 +255,7 @@
                 },
                 "17-boosting": {
                     "metadata": {
-                        "date": "2023-03-14",
+                        "date": "2024-03-12",
                         "topic": "Boosting",
                         "number": 17,
                         "videos": null
@@ -298,7 +298,7 @@
             "publications": {
                 "01-gradient": {
                     "metadata": {
-                        "date": "2023-01-19",
+                        "date": "2024-01-08",
                         "topic": "Gradients",
                         "number": 1,
                         "recording": null
@@ -307,7 +307,7 @@
                 },
                 "02-convexity": {
                     "metadata": {
-                        "date": "2023-01-26",
+                        "date": "2024-01-15",
                         "topic": "Convexity",
                         "number": 2,
                         "recording": null
@@ -316,7 +316,7 @@
                 },
                 "03-kernels": {
                     "metadata": {
-                        "date": "2023-02-02",
+                        "date": "2024-01-22",
                         "topic": "Regularization and Kernels",
                         "number": 3,
                         "recording": null
@@ -390,9 +390,9 @@
             "publications": {
                 "01-nearest_neighbor_and_linear_models": {
                     "metadata": {
-                        "due": "2023-01-15 23:59:00",
+                        "due": "2024-01-14 23:59:00",
                         "ready": true,
-                        "released": "2023-01-10 00:00:00",
+                        "released": "2024-01-09 00:00:00",
                         "topic": "Nearest Neighbor and Regression",
                         "number": 1
                     },
@@ -430,8 +430,8 @@
             "publications": {
                 "01-nearest_neighbor_and_linear_models": {
                     "metadata": {
-                        "due": "2023-01-18 23:59:00",
-                        "released": "2023-01-12 00:00:00",
+                        "due": "2024-01-17 23:59:00",
+                        "released": "2024-01-11 00:00:00",
                         "topic": "Nearest Neighbors and Linear Regression",
                         "number": 1
                     },
@@ -439,8 +439,8 @@
                 },
                 "02-linear_models_and_gradient": {
                     "metadata": {
-                        "due": "2023-01-25 23:59:00",
-                        "released": "2023-01-19 00:00:00",
+                        "due": "2024-01-24 23:59:00",
+                        "released": "2024-01-18 00:00:00",
                         "topic": "Linear Models and Gradient Descent",
                         "number": 2
                     },
@@ -448,8 +448,8 @@
                 },
                 "03-sgd_and_svm": {
                     "metadata": {
-                        "due": "2023-02-01 23:59:00",
-                        "released": "2023-01-26 00:00:00",
+                        "due": "2024-01-31 23:59:00",
+                        "released": "2024-01-25 00:00:00",
                         "topic": "Convexity and SVM",
                         "number": 3
                     },
@@ -457,8 +457,8 @@
                 },
                 "04-regularizers_and_kernels": {
                     "metadata": {
-                        "due": "2023-02-08 23:59:00",
-                        "released": "2023-02-02 00:00:00",
+                        "due": "2024-02-07 23:59:00",
+                        "released": "2024-02-01 00:00:00",
                         "topic": "Regularizers and Kernels",
                         "number": 4
                     },
@@ -466,8 +466,8 @@
                 },
                 "05-neural_networks": {
                     "metadata": {
-                        "due": "2023-02-15 23:59:00",
-                        "released": "2023-02-09 00:00:00",
+                        "due": "2024-02-14 23:59:00",
+                        "released": "2024-02-08 00:00:00",
                         "topic": "Neural Networks",
                         "number": 5
                     },
@@ -475,8 +475,8 @@
                 },
                 "06-competition": {
                     "metadata": {
-                        "due": "2023-02-22 23:59:00",
-                        "released": "2023-02-16 00:00:00",
+                        "due": "2024-02-21 23:59:00",
+                        "released": "2024-02-15 00:00:00",
                         "topic": "Review",
                         "number": 6
                     },
@@ -484,8 +484,8 @@
                 },
                 "07-probabilistic": {
                     "metadata": {
-                        "due": "2023-03-01 23:59:00",
-                        "released": "2023-02-23 00:00:00",
+                        "due": "2024-02-28 23:59:00",
+                        "released": "2024-02-22 00:00:00",
                         "topic": "Probabilistic Modeling",
                         "number": 7
                     },
@@ -493,8 +493,8 @@
                 },
                 "08-naive": {
                     "metadata": {
-                        "due": "2023-03-08 23:59:00",
-                        "released": "2023-03-02 00:00:00",
+                        "due": "2024-03-06 23:59:00",
+                        "released": "2024-02-29 00:00:00",
                         "topic": "Naive Bayes and Regression",
                         "number": 8
                     },
