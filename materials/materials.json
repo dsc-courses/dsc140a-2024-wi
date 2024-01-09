@@ -51,7 +51,11 @@
                         "topic": "Introduction",
                         "number": 1
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/01-knn/slides.pdf"
+                        }
+                    }
                 },
                 "02-linear_models": {
                     "metadata": {
